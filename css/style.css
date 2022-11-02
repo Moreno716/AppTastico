@@ -1,0 +1,372 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* html{
+    overflow: hidden;
+} */
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    background-color: #4C5B65;
+    justify-content: space-between;
+    padding: 0px 150px 0px 150px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li{
+    display: inline
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 475px;
+    align-items: center;
+    padding: 9px;
+}
+.logo{
+    padding: 15px;
+}
+/* PARTE CELULAR */
+
+.firstPart{
+    display: flex;
+    background-color: #4C5B65;
+}
+.ios{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    padding: 13px 221px 55px 232px;
+    flex-wrap: wrap;
+}
+h1{
+    color: white;
+    font-size: 45px;
+}
+.parrafo1{
+    color:white
+}
+.parrafo2{
+    color: #A0A0A0;
+}
+.cellphone{
+    height: 177px;
+    /* background-color: #4C5B65; */
+    padding: 0px 200px 165px 200px;
+}
+.imageTelefono{
+    display: flex;
+    /* justify-content: left;
+    float: left; */
+    height: 393px;
+    /* right: 458px; */
+    padding: 0px 50px 0px;
+}
+button{
+    color: white;
+    border-radius: 20px;
+    background-color: #414C55;
+    border: none;
+    height: 28px;
+    width: 75px;
+}
+.or{
+    display:flex;
+    justify-content: left;
+    align-items: baseline;
+}
+.request{
+    color: white;
+    border-radius: 30px;
+    background-color: #3c92d0;
+    border: none;
+    height: 38px;
+    width: 175px;
+}
+span{
+    color: white;
+}
+a{
+    color: white;
+}
+
+/* APARTADO LOGOS */
+
+.campoLogos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #ECECEC;
+    padding: 15px 0px;
+    justify-items: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+
+/* CUADROS */
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 0px;
+    text-align: center;
+    width: 67%;
+    grid-column-gap: 25px;
+    padding-left: 17%;
+}
+
+.botonRead{
+    background-color: #3c92d0;
+    color: white;
+    border-radius: 3px;
+    background-color: #3c92d0;
+    border: none;
+    height: 38px;
+    width: 116px;
+}
+.cuadrosImages{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+
+/* IMAGENES */
+
+.contenedorImages{
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0;
+}
+.select{
+    grid-column: 1/5;
+}
+.imagesFour{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 30px;
+    justify-items: center;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+.ubi{
+    padding-left: 30px;
+}
+.imagenitas{
+    width: 277px;
+    height: 191px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px #b2b2b2;
+}
+
+/* PUBLICACIONES */
+
+.contenedorPublicaciones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    height: 515px;
+}
+.contLeft{
+    width: 700px;
+}
+.parrafos{
+    width: 400px;
+}
+.twoImages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.photos{
+    height: 130px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px ;
+}
+.colorxd{
+    color:rgb(0, 149, 255);
+}
+.parrafosDown{
+    color: #696969;
+}
+.finalText{
+    color: rgb(0, 149, 255);
+}
+.contRight{
+    display: grid;
+    width: 600px;
+    grid-template-rows: repeat(5,1fr);
+}
+.tastico{
+    font-weight: 800;
+    color: black;
+}
+.peye{
+    color: rgb(0, 149, 255);
+}
+.sisi{
+    width: 190px;
+    display: grid;
+    grid-template-columns: 33px 1fr;
+}
+.date{
+    font-size: 11px;
+    color: #B4B4B4
+}
+.yaya{
+    color: rgb(0, 149, 255);
+}
+
+/* FOOTER */
+
+hr{
+    width: 85%;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width:1200px){
+    header{
+        width:99%;
+    }
+    .imageTelefono{
+        height: 507px;
+    }
+    .firstPart{
+        width: 124%;
+    }
+    .campoLogos{
+        width: 124%;
+    }
+    .contenedorImages{
+        width: 124%;
+    }
+    .contenedor{
+        width: 95%;
+    }
+    .ios{
+        width: 400px;
+        padding: 0px 0px 138px 128px;
+    }
+    .cellphone{
+        padding: 0px 90px 0px 50px;
+    }
+    .contLeft{
+        width: 820px;
+    }
+    .sisi{
+        grid-template-columns: 70px 1fr;
+        width: 203px;
+    }
+    .imagitas{
+        padding-left: 40%;
+    }
+    .finalText{
+        padding-left:30px;
+    }
+    footer{
+        padding-left: 22%;
+    }
+    hr{
+        width: 123%;
+    }
+}
+
+@media(max-width:768px){
+    header{
+        width: 137%;
+    }
+    .firstPart{
+        width: 176%;
+    }
+    .campoLogos{
+        width: 176%;
+    }
+    .contenedor{
+        width: 145%;
+    }
+    .parrafos{
+        width: 401px;
+    }
+    .contRight{
+        width: 533px;
+    }
+    hr{
+        width: 175%;
+    }
+    .ios{
+        width: 400px;
+        padding: 0px 0px 150px 0px;
+    }
+    .contenedorImages{
+        width: 176%;
+    }
+    footer{
+        width: 100%;
+        padding-left: 37%;
+    }
+}
+
+@media(max-width:576px){
+    header{
+        width: 153%;
+    }
+    .firstPart{
+        width: 205%;
+    }
+    .imageTelefono{
+        height: 537px;
+    }
+    a{
+        width: 53%;
+    }
+    .ios{
+        padding: 0px 0px 92px 0px;
+        font-size: 20px;
+    }
+    .campoLogos{
+        width: 205%;
+    }
+    .contenedorImages{
+        width: 205%;
+    }
+    .contenedor{
+        width:182%;
+    }
+    .contLeft{
+        width: 649px;
+    }
+    hr{
+        width: 199%;
+    }
+    footer{
+        width: 100%;
+        padding-left: 49%;
+    }
+}
